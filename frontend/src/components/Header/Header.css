@@ -1,0 +1,62 @@
+.header {
+  height: 34vw;
+  background: url("/header_img.png") no-repeat;
+  margin: 30px auto;
+  background-size: contain;
+  position: relative;
+}
+.header-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+.header-content h2 {
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw, 22px);
+}
+.header-content p {
+  color: white;
+  font-size: 1vw;
+}
+
+.header-content button {
+  color: #747474;
+  border: none;
+  font-size: max(1vw, 13px);
+  background-color: white;
+  border-radius: 50px;
+  padding: 1vw 2.3vw;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Large Screen Laptop */
+@media (max-width: 1250px) {
+  .header-content {
+    max-width: 45%;
+  }
+}
+
+/* Tablet Screen */
+@media (max-width: 900px) {
+}
+
+/* Tablet Screen */
+@media (max-width: 750px) {
+  .header-content {
+    max-width: 60%;
+  }
+  .header-content p {
+    display: none;
+  }
+  .header-content button {
+    padding: 2vw 3vw;
+  }
+}
